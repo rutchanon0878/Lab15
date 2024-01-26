@@ -21,9 +21,7 @@ void shuffle(int &a,int &b,int &c,int &d){
 		int x[] = {a,b,c,d};
 		for(int i=0;i<4;i++){
 			int z = rand()%4;
-			int y = x[i];
-			x[i] = x[z];
-			x[z] = y;
+			swap(x[i],x[z]);
 
 		}
 		a = x[0];
